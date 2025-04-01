@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*TRIGGER*/
+.trigger{
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  background: #333;
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.trigger_none{margin-bottom: 0;}
+.trigger p{margin-top: 10px;}
+.trigger_ajax{display: none; cursor: pointer;}
+.trigger_success{background-color: #00B494;}
+.trigger_info{background-color: #0E96E5;}
+.trigger_alert{background-color: #FAAD50;}
+.trigger_error{background-color: #F45563;}
+
+.trigger_modal{
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 460px;
+  max-width: 80%;
+  padding: 20px 20px 0 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.trigger_modal .trigger{
+  padding: 20px;
+  margin: auto 30px auto auto;
+}
+
+.trigger_progress{
+  background-color: rgba(0,0,0,0.1);
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background: url(../img/bg.png) rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.content {
+  float: right;
+  width: 500px;
+  height: 100%;
+  padding: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  max-width: 200px;
+  max-height: 100px;
+  margin-bottom: 45px;
+}
+
+form {
+
+}
+
+label {
+
+}
+
+input, select {
+  background: transparent;
+  border: 1px solid #444;
+  outline: none;
+  margin: 5px 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #fff;
+}
+
+select {
+  font-size: .8em;
+}
+
+button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    width: 100% !important;
+    height: 100%;
+    padding: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
